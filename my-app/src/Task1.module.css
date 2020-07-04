@@ -1,0 +1,73 @@
+
+
+
+/* созаем прямоугольник,
+ цвет которого будет у  "хвостика" */.div__box:before {
+                                         content:"";
+                                         position:absolute;
+                                         z-index: -2;
+                                         bottom: -40%;
+                                         left: -25%;
+                                         height:22px;
+                                         width: 30px;
+                                         background:white;
+                                         border-bottom-right-radius:15px;
+                                         border-bottom-left-radius:10px;
+
+                                     }
+/* создаем закругленный прямоугольник,
+ который закрывает часть созданного выше прямоугольника  */
+.div__box:after {
+    content:"";
+    position:absolute;
+    z-index: -3;
+    bottom: -15px;
+    left:-10px;
+    width:10px;
+    height:20px;
+    background: yellowgreen;
+    border-bottom-right-radius: 10px
+
+}
+/* создаем правый закругленный прямоугольник,
+чтобы закрыть правую часть */
+.div {
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius:20px;
+}
+.div {
+    background:yellowgreen;
+    position: relative;
+
+
+}
+.div__box {
+
+    background-color: yellowgreen;
+    position: relative;
+
+
+
+}
+.name {
+    color: firebrick;
+    left: -55px;
+    position: relative;
+    font-weight: 500;
+}
+.text {
+    font-weight: 400;
+    color: darkcyan;
+}
+.text:after {
+    content: ' 20-00';
+    color: #6c9f06;
+    background-color: yellowgreen;
+    position: inherit;
+   z-index: 4;
+    bottom: -45px;
+    left: 40px;
+}
